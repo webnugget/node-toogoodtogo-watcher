@@ -52,6 +52,11 @@ switch (argv._[0]) {
       config.set(customConfig);
     }
 
+    if(process.env.TGTG_CONFIG){
+      const customConfig = JSON.parse(process.env.TGTG_CONFIG);
+      config.set(customConfig);
+    }
+
     pollFavoriteBusinesses$(notifier.hasListeners$()).subscribe(
       (businesses) => notifier.notifyIfChanged(businesses),
       console.error
