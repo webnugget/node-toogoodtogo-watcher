@@ -54,6 +54,10 @@ switch (argv._[0]) {
 
     if(process.env.TGTG_CONFIG){
       const customConfig = JSON.parse(process.env.TGTG_CONFIG);
+
+      console.log('init with custom config from environment');
+
+      console.log(JSON.stringify(customConfig, undefined,2))
       config.set(customConfig);
     }
 
