@@ -7,7 +7,7 @@
     "deviceType": "IOS",
     "headers": {
     },
-    "pollingIntervalInMs": 30000,
+    "pollingIntervalInMs": 10000,
     "authenticationIntervalInMS": 3600000
   },
   "notifications": {
